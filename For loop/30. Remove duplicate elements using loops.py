@@ -1,9 +1,9 @@
-li=list(eval(input("Enter list : ")))
-new=[]
-for i in li:
-    if i not in new:
-        new.append(i)
-print(new)
+# li=list(eval(input("Enter list : ")))
+# new=[]
+# for i in li:
+#     if i not in new:
+#         new.append(i)
+# print(new)
 
 # li=list(eval(input("Enter list : ")))
 # new=[]
@@ -29,14 +29,18 @@ print(new)
 # print(f"Second Largest is {max(li)}")
 
 
-a=3
-b=4
-c=1
-if a<b and a>c:
-    print(a,"Second Largest")
-elif b<a and b<c:
-    print(b,"Second Largest")
-else:
-    print(c,"Second Largest")
+n=int(input("Enter Number: "))
+string =str(n)
+for i in range(len(string)):
+    rot=string[i:]+string[:i]
+    num=int(string)
+    count=0
+    for j in range(1,num+1):
+        if num%j==0:
+            count=count+1
+            if count ==2:
+                pass
+print("It's a Circular Prime Number")
+
 
 
